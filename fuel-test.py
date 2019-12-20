@@ -24,8 +24,8 @@ class TestFeul(unittest.TestCase):
 
     def test_calculate_fuel_of_modules(self):
         '''Verify that fuel can be calculated for multiple modules'''
-        modules = [12, 14, 1969, 100756]
-        expected_fuel = 2 + 2 + 654 + 33583
+        modules = [14, 1969, 100756]
+        expected_fuel = 2 + 966 + 50346
         fuel = calculate_fuel_of_modules(modules)
 
         self.assertEqual(fuel, expected_fuel)

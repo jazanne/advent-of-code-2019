@@ -17,5 +17,5 @@ def calculate_fuel_for_mass_and_fuel(mass):
 def calculate_fuel_of_modules(modules):
     fuel = 0
     for mass in modules:
-        fuel += find_fuel_by_mass(mass)
+        fuel += calculate_fuel_for_mass_and_fuel(mass)
     return fuel
