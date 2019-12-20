@@ -6,7 +6,13 @@ def find_fuel_by_mass(mass):
     return fuel
 
 def calculate_fuel_for_mass_and_fuel(mass):
-    pass
+    fuel = 0
+    new_fuel = find_fuel_by_mass(mass)
+    while new_fuel > 0:
+        fuel += new_fuel
+        new_fuel = find_fuel_by_mass(new_fuel)
+
+    return fuel
 
 def calculate_fuel_of_modules(modules):
     fuel = 0
